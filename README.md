@@ -5,7 +5,16 @@
 [![codecov](https://codecov.io/gh/kike/jupyter-nivo/branch/master/graph/badge.svg)](https://codecov.io/gh/kike/jupyter-nivo)
 
 
-Jupyter Nivo Widget Library
+Jupyter Nivo is a plugin for including interactive React [Nivo](https://nivo.rocks) charts in jupter notebooks.
+
+Example using Line Charts:
+
+![image](examples/line.png)
+
+Example using Bar Charts:
+
+![image](examples/bar.png)
+
 
 ## Installation
 
