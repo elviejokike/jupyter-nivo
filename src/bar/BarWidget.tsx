@@ -1,8 +1,7 @@
 import React from 'react';
 import { WidgetModel } from '@jupyter-widgets/base';
-import { useModelState, WidgetModelContext } from './hooks/widget-model';
+import { useModelState, WidgetModelContext } from '../hooks/widget-model';
 import { ResponsiveBar } from '@nivo/bar';
-
 
 
 interface WidgetProps {
