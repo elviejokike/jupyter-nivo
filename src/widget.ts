@@ -6,7 +6,7 @@ import {
   DOMWidgetView,
   ISerializers,
 } from '@jupyter-widgets/base';
-import ReactWidget from "./ReactWidget"
+import BarWidget from "./BarWidget"
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -18,7 +18,7 @@ import '../css/widget.css';
 // Your widget state goes here. Make sure to update the corresponding
 // Python state in example.py
 const defaultModelProperties = {
-  value: 'Hello World',
+  data: [],
 }
 
 export type WidgetModelState = typeof defaultModelProperties
@@ -54,7 +54,7 @@ export class ExampleView extends DOMWidgetView {
   render() {
     this.el.classList.add('custom-widget');
 
-    const component = React.createElement(ReactWidget, {
+    const component = React.createElement(BarWidget, {
       model: this.model,
     });
     ReactDOM.render(component, this.el);

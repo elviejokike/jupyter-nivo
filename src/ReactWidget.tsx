@@ -7,7 +7,7 @@ interface WidgetProps {
 }
 
 function ReactWidget(props: WidgetProps) {
-  const [name, setName] = useModelState('value');
+  const [data, setData] = useModelState('data');
   const inputStyle = {
     padding: '7px',
     background: 'whitesmoke',
@@ -21,8 +21,8 @@ function ReactWidget(props: WidgetProps) {
       <input
         style={inputStyle}
         type="text"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
+        value={data[0]}
+        onChange={(e) => setData([])}
       />
     </div>
   );

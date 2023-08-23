@@ -9,7 +9,7 @@ TODO: Add module docstring
 """
 
 from ipywidgets import DOMWidget
-from traitlets import Unicode
+from traitlets import List, Unicode
 from ._frontend import module_name, module_version
 
 
@@ -25,4 +25,4 @@ class ExampleWidget(DOMWidget):
 
     # Your widget state goes here. Make sure to update the corresponding
     # JavaScript widget state (defaultModelProperties) in widget.ts
-    value = Unicode('Jupyter').tag(sync=True)
+    data = List().tag(sync=True)
