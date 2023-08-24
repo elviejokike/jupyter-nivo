@@ -6,6 +6,7 @@
 
 from .bar import BarWidget
 from .line import LineWidget
+from .treemap import TreeMapWidget
 from ._version import __version__, version_info
 
 def _jupyter_labextension_paths():
