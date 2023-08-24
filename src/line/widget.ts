@@ -9,16 +9,13 @@ import {
   import LineWidget from "./LineWidget"
   import React from 'react';
   import ReactDOM from 'react-dom';
-  
+  import { defaultModelProperties } from '../common';
   import { MODULE_NAME, MODULE_VERSION } from '../version';
   
   // Import the CSS
   import '../../css/widget.css';
   
   // Your widget state goes here. Make sure to update the corresponding
-  const defaultModelProperties = {
-    data: [],
-  }
   
   export type LineWidgetModelState = typeof defaultModelProperties
   

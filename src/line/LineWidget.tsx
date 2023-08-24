@@ -10,9 +10,11 @@ interface WidgetProps {
 
 function LineWidget(props: WidgetProps) {
   const [data ] = useModelState('data');
+  const [ style] = useModelState('style');
+  const comp_style = {width:500, height:500, ...style};
   
   return (
-    <div style={{width:500, height:500}}>
+    <div style={comp_style}>
     <ResponsiveLine
       data={data}
       margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
