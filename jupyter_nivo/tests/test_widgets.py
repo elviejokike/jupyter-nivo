@@ -6,7 +6,7 @@
 
 import pytest
 
-from ..bar import BarWidget
+from ..widgets import BarWidget
 
 
 def test_example_creation_blank():

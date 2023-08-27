@@ -10,6 +10,9 @@ class NivoWidgetMixin(HasTraits):
     _view_module = Unicode(module_name).tag(sync=True)
     _model_module_version = Unicode(module_version).tag(sync=True)
     _view_module_version = Unicode(module_version).tag(sync=True)
+
+    # nivo attributes
+    style = Dict().tag(sync=True)
         
 
 class BarWidget(NivoWidgetMixin, DOMWidget):
@@ -17,7 +20,6 @@ class BarWidget(NivoWidgetMixin, DOMWidget):
     _view_name = Unicode('BarView').tag(sync=True)
     
     data = List().tag(sync=True)
-    style = Dict().tag(sync=True)
 
 class LineWidget(NivoWidgetMixin, DOMWidget):
     """ Nivo Line Widget
@@ -26,7 +28,6 @@ class LineWidget(NivoWidgetMixin, DOMWidget):
     _view_name = Unicode('LineView').tag(sync=True)
     
     data = List().tag(sync=True)
-    style = Dict().tag(sync=True)
 
 class TreeMapWidget(NivoWidgetMixin, DOMWidget):
     """ Nivo TreeMap Widget
@@ -35,4 +36,3 @@ class TreeMapWidget(NivoWidgetMixin, DOMWidget):
     _view_name = Unicode('TreeMapView').tag(sync=True)
     
     data = List().tag(sync=True)
-    style = Dict().tag(sync=True)
